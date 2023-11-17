@@ -82,7 +82,7 @@ public class StudentController {
     // spring boot rest api that handles http put request - updating existing resource
     // http://localhost:8080/student/{id}/update
     @PutMapping("{id}/update")
-    public ResponseEntity<Student> updateStudent(@RequestBody  Student student,@PathVariable("id") int studentId){
+    public ResponseEntity<Student> updateStudent(@RequestBody Student student,@PathVariable("id") int studentId){
         System.out.println(student.getFirstName());
         System.out.println(student.getLastName());
         return ResponseEntity.ok(student);
